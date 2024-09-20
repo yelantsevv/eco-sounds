@@ -37,6 +37,7 @@ body {
 .nav-item.active,
 .nav-item:hover {
   color: var(--colorActive);
+  cursor: pointer;
 }
 .main {
   display: flex;
@@ -80,6 +81,8 @@ body {
 .pause:hover,
 .play:hover {
   opacity: 0.8;
+  cursor: pointer;
+
 }
 
 .footer-data {
