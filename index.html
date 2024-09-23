@@ -5,52 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>eco-sounds</title>
+    <title>Audio Player</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <logo class="nav-item forest">
-                <img class=" logo"
-                    src="https://raw.githubusercontent.com/rolling-scopes-school/file-storage/0cc03c9205e9d7a51c4baa82a34a11097914bb71/assets/svg/logo.svg"
-                    alt="logo">
-            </logo>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item solovey">Соловей</li>
-                    <li class="nav-item drozd">Дрозд</a></li>
-                    <li class="nav-item zarynka">Малиновка</li>
-                    <li class="nav-item javoronok">Жаворонок</li>
-                    <li class="nav-item slavka">Славка</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="main">
-        <img class="img forest active"
-            src="https://github.com/rolling-scopes-school/file-storage/blob/eco-sounds/assets/img/forest.jpg?raw=true"
-            alt="forest">
-        <img class="img solovey "
-            src="https://github.com/rolling-scopes-school/file-storage/blob/eco-sounds/assets/img/solovey.jpg?raw=true"
-            alt="solovey">
-        <img class="img drozd"
-            src="https://github.com/rolling-scopes-school/file-storage/blob/eco-sounds/assets/img/drozd.jpg?raw=true"
-            alt="drozd">
-        <img class="img zarynka"
-            src="https://github.com/rolling-scopes-school/file-storage/blob/eco-sounds/assets/img/zarynka.jpg?raw=true"
-            alt="zarynka">
-        <img class="img javoronok"
-            src="https://github.com/rolling-scopes-school/file-storage/blob/eco-sounds/assets/img/javoronok.jpg?raw=true"
-            alt="javoronok">
-        <img class="img slavka"
-            src="https://github.com/rolling-scopes-school/file-storage/blob/eco-sounds/assets/img/slavka.jpg?raw=true"
-            alt="slavka">
 
-        <button class="play "
-            style="background-image: url(https://raw.githubusercontent.com/rolling-scopes-school/file-storage/0cc03c9205e9d7a51c4baa82a34a11097914bb71/assets/svg/play.svg)"></button>
-        <button class="pause active"
-            style="background-image: url(https://raw.githubusercontent.com/rolling-scopes-school/file-storage/0cc03c9205e9d7a51c4baa82a34a11097914bb71/assets/svg/pause.svg)"></button>
+    <main class="main">
+        <img class="img forest active" src="" alt="">
+        <div class="pleer">
+            <img class="activeImg" src="" alt="">
+            <p class="text"></p>
+            <div class="navPleer">
+
+                <button class="playPrev"
+                    style="background-image: url(https://github.com/rolling-scopes-school/file-storage/blob/audio-player/assets/svg/backward.png?raw=true)"></button>
+                <button class="play "
+                    style="background-image: url(https://github.com/rolling-scopes-school/file-storage/blob/audio-player/assets/svg/play.png?raw=true)"></button>
+                <button class="pause active"
+                    style="background-image: url(https://github.com/rolling-scopes-school/file-storage/blob/audio-player/assets/svg/pause.png?raw=true)"></button>
+                <button class="playNext"
+                    style="background-image: url(https://github.com/rolling-scopes-school/file-storage/blob/audio-player/assets/svg/forward.png?raw=true)"></button>
+
+            </div>
+            <div class="playerContainer">
+                <span class="player-time player-time-current">00:00</span>
+                <div class="playerProgress">
+                    <div class="playerProgressFill"></div>
+                </div>
+                <span class="player-time player-time-duration">00:00</span>
+            </div>
+        </div>
     </main>
 
     <footer>
